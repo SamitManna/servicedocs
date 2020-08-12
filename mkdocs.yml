@@ -1,0 +1,54 @@
+site_name: ROCC Service Docs Portal
+copyright: Copyright © 2020, Philips, All rights reserved.
+theme: united
+markdown_extensions:
+    - toc:
+        permalink:
+pages:
+- Home:
+    - Welcome: index.md
+- Customer Checklist:
+  - Deployment Views: CustomerChecklist/IT_Specification/deployment-view.md      
+  - IT Specification : CustomerChecklist/IT_Specification/it-operation-request-for-ROCC.md
+  - Customer workflow finalization: CustomerChecklist/IT_Specification/customer-workflow-getting-started.md
+  - Management: CustomerChecklist/IT_Specification/master-data-management.md
+- Product Installation:
+  - Platform Installation: Production_Installation/platform-installation.md
+  - Hardware Deployment: Production_Installation/hardware-integration.md
+  - Central Manager(KVM Infra management): Production_Installation/KVM-Infra-Management.md 
+  - Application Server (On-Prem): Production_Installation/application-server-installation.md
+  - Command Center: Production_Installation/Command-Center.md
+  - Device(spoke) Installation:  Production_Installation/Device-installation.md
+  - SurfacePro installation: Production_Installation/surfacePro-installation.md
+  - Anywhere App installation: Production_Installation/anywhere-app-installation.md
+  - Boxilla Upgrade: Production_Installation/boxilla-tx-rx-upgrade.md
+  - Customer On-boarding:
+      - New customer onboarding: Production_Installation/new-customer-onboarding.md
+      - Updates to existing customer: Production_Installation/update-existing.customer.md
+  - Integration:
+      - Hardware Integration: Production_Installation/hardware-integration.md
+      - Testing and Validation: Production_Installation/testing-validation.md
+  - Serviceability:
+      - Admin Workflow: Serviceability/admin-workflow.md
+      - Audit viewing: Serviceability/audit-Logging.md
+      - HSDP Logs viewing: Serviceability/hsdp-log-viewer.md  
+      - Device Enrollment: Serviceability/device-enrollement.md
+      - FSE On-boarding: Serviceability/FSE-on-boarding.md  
+      - User Creation and Authorization: Serviceability/usercreation-authorization.md
+      - Password Management: Serviceability/password-management.md
+      - Service Alert Management: Serviceability/service-alert-management.md
+  - Troubleshooting:
+      - Troubleshooting Guide: TrainingAndTroubleshooting/troubleshooting-guide.md
+      - Training Videos: TrainingAndTroubleshooting/training-video.md
+      - Troubleshoot Mouse Misalignment Issues: TrainingAndTroubleshooting/troubleshoot-mouse-missalignment.md
+      - Troubleshoot Dual Mouse support: TrainingAndTroubleshooting/troubleshoot-dual-mouse-support.md 
+- Changelogs:
+    - Platform :
+       - ROCC Server: changelogs/platform.md
+    - On-Prem:
+       - ROCC Application: changelogs/application.md
+       - ROCC Device(SurfacePro): changelogs/rocc-surfacepro.md
+    #- Hardware:
+    #- ROCC Tranmitter and Receiver: changelogs/hardware.md
+extra_css: [extra.css]
+extra_javascript: [jquery.tablesorter.min.js, extra.js]
