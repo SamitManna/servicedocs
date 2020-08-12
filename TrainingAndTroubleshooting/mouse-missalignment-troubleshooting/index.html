@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Mouse missalignment troubleshooting - ROCC Service Docs Portal</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../extra.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">ROCC Service Docs Portal</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../..">Welcome</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer Checklist <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/deployment-view/">Deployment Views</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/it-operation-request-for-ROCC/">IT Specification</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/customer-workflow-getting-started/">Customer workflow finalization</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/master-data-management/">Management</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product Installation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../Production_Installation/platform-installation/">Platform Installation</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/hardware-integration/">Hardware Deployment</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/KVM-Infra-Management/">Central Manager(KVM Infra management)</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/application-server-installation/">Application Server (On-Prem)</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/Command-Center/">Command Center</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/Device-installation/">Device(spoke) Installation</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/surfacePro-installation/">SurfacePro installation</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/anywhere-app-installation/">Anywhere App installation</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/boxilla-tx-rx-upgrade/">Boxilla Upgrade</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Customer On-boarding</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Production_Installation/new-customer-onboarding/">New customer onboarding</a>
+</li>
+            
+<li >
+    <a href="../../Production_Installation/update-existing.customer/">Updates to existing customer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Integration</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Production_Installation/hardware-integration/">Hardware Integration</a>
+</li>
+            
+<li >
+    <a href="../../Production_Installation/testing-validation/">Testing and Validation</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Serviceability</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Serviceability/admin-workflow/">Admin Workflow</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/audit-Logging/">Audit viewing</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/hsdp-log-viewer/">HSDP Logs viewing</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/device-enrollement/">Device Enrollment</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/FSE-on-boarding/">FSE On-boarding</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/usercreation-authorization/">User Creation and Authorization</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/password-management/">Password Management</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/service-alert-management/">Service Alert Management</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Troubleshooting</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../troubleshooting-guide/">Troubleshooting Guide</a>
+</li>
+            
+<li >
+    <a href="../training-video/">Training Videos</a>
+</li>
+            
+<li >
+    <a href="../troubleshoot-mouse-missalignment/">Troubleshoot Mouse Misalignment Issues</a>
+</li>
+            
+<li >
+    <a href="../troubleshoot-dual-mouse-support/">Troubleshoot Dual Mouse support</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changelogs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Platform</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../changelogs/platform/">ROCC Server</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">On-Prem</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../changelogs/application/">ROCC Application</a>
+</li>
+            
+<li >
+    <a href="../../changelogs/rocc-surfacepro/">ROCC Device(SurfacePro)</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#ge-signa-hdx-mr-scanner-mouse-misalignment-fix">GE Signa HDX MR Scanner - Mouse misalignment Fix</a></li>
+        <li class="main "><a href="#identifying-dual-mouse-support-on-ge-scanner-machine">Identifying dual mouse support on GE Scanner Machine</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h3 id="ge-signa-hdx-mr-scanner-mouse-misalignment-fix">GE Signa HDX MR Scanner - Mouse misalignment Fix</h3>
+<p><strong>Step 1:</strong>  Login as root and navigate to /etc/X11 directory using below command</p>
+<pre><code>cd /etc/X11/
+</code></pre>
+<p><strong>Step 2:</strong> Edit xorg.conf file to add BBOXABSMOUSE device as below</p>
+<p>Option    “AutoAddDevices” “on”</p>
+<p><img alt="" src="../media/TT_01.png" /></p>
+<p>Add following section below the Mouse[1] input device.</p>
+<pre><code>Section "InputDevice"
+Driver       "evdev"
+Identifier   "BBOXABSMOUSE"
+Option       "Type" "cursor"
+Option       "Device" "/dev/input/event"
+Option       "Mode" "Absolute"
+Option       "SendCoreEvents" "on"
+EndSection
+</code></pre>
+<p><img alt="" src="../media/TT_02.png" /></p>
+<p>Add line below line to server layout.</p>
+<p>InputDevice  "BBOXABSMOUSE" "SendCoreEvents"</p>
+<p>Save file and exit</p>
+<p><strong>Step 3:</strong> Download and copy script to /etc/init.d/check_event_boot</p>
+<pre><code class="bash">    #! /bin/sh
+    # chkconfig: 5 98 10
+    ### BEGIN INIT INFO
+    # Provides:          check_event_boot
+    # Required-Start:    $local_fs
+    # Required-Stop:
+    # Should-Start:      xdm
+    # Should-Stop:
+    # Default-Start:     5
+    # Default-Stop:
+    # Description:       Routine to start check_event_boot at system startup
+    ### END INIT INFO
+    event=$(readlink /dev/input/by-id/usb-Custom_Cloud_Device_Custom_Cloud_Device-event-joystick | awk '{print substr($0,4)}')
+    if [ -z &quot;$event&quot; ]
+    then
+        sed -i s'/\&quot;Device&quot; \&quot;\/dev\/input\/event.*\&quot;/\&quot;Device&quot; \&quot;\/dev\/input\/event\&quot;/' /etc/X11/xorg.conf
+    else
+         sed -i s'/\&quot;Device&quot; \&quot;\/dev\/input\/event.*\&quot;/\&quot;Device&quot; \&quot;\/dev\/input\/'$event'\&quot;/' /etc/X11/xorg.conf
+    fi
+</code></pre>
+
+<p><strong>Step 4:</strong> give executable execute  permission and convert script as a part of init process</p>
+<pre><code>    chmod u+x /etc.init.d/check_event_boot
+
+    #Activate init script by running below command
+
+    insserv /etc.init.d/check_event_boot
+
+    Reboot server
+</code></pre>
+
+<h3 id="identifying-dual-mouse-support-on-ge-scanner-machine">Identifying dual mouse support on GE Scanner Machine</h3>
+<p>Apart from checking physically, we can also check dual mouse support from /etc/X11/xorg.conf file.</p>
+<p>Check if below lines are present inside xorg.conf file to confirm dual mouse support</p>
+<pre><code>InputDevices &quot;/dev/input/mice&quot;
+
+and 
+
+Section &quot;InputDevice&quot;
+    Identifier     &quot;Mouse[1]&quot;
+    Driver         &quot;mouse&quot;
+    Option         &quot;Buttons&quot; &quot;12&quot;
+    Option         &quot;Device&quot; &quot;/dev/input/mice&quot;
+    Option         &quot;Name&quot; &quot;Logitech USB Optical Mouse&quot;
+    Option         &quot;Protocol&quot; &quot;explorerps/2&quot;
+    Option         &quot;Vendor&quot; &quot;Sysp&quot;
+    Option         &quot;ZAxisMapping&quot; &quot;4 5&quot;
+EndSection
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright © 2020, Philips, All rights reserved.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../jquery.tablesorter.min.js" defer></script>
+        <script src="../../extra.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

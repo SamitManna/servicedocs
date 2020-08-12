@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Hardware Integration - ROCC Service Docs Portal</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../extra.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">ROCC Service Docs Portal</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../..">Welcome</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer Checklist <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/deployment-view/">Deployment Views</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/it-operation-request-for-ROCC/">IT Specification</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/customer-workflow-getting-started/">Customer workflow finalization</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/master-data-management/">Management</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product Installation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../platform-installation/">Platform Installation</a>
+</li>
+                                    
+<li >
+    <a href="./">Hardware Deployment</a>
+</li>
+                                    
+<li >
+    <a href="../KVM-Infra-Management/">Central Manager(KVM Infra management)</a>
+</li>
+                                    
+<li >
+    <a href="../application-server-installation/">Application Server (On-Prem)</a>
+</li>
+                                    
+<li >
+    <a href="../Command-Center/">Command Center</a>
+</li>
+                                    
+<li >
+    <a href="../Device-installation/">Device(spoke) Installation</a>
+</li>
+                                    
+<li >
+    <a href="../surfacePro-installation/">SurfacePro installation</a>
+</li>
+                                    
+<li >
+    <a href="../anywhere-app-installation/">Anywhere App installation</a>
+</li>
+                                    
+<li >
+    <a href="../boxilla-tx-rx-upgrade/">Boxilla Upgrade</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Customer On-boarding</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../new-customer-onboarding/">New customer onboarding</a>
+</li>
+            
+<li >
+    <a href="../update-existing.customer/">Updates to existing customer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Integration</a>
+    <ul class="dropdown-menu">
+            
+<li class="active">
+    <a href="./">Hardware Integration</a>
+</li>
+            
+<li >
+    <a href="../testing-validation/">Testing and Validation</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Serviceability</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Serviceability/admin-workflow/">Admin Workflow</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/audit-Logging/">Audit viewing</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/hsdp-log-viewer/">HSDP Logs viewing</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/device-enrollement/">Device Enrollment</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/FSE-on-boarding/">FSE On-boarding</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/usercreation-authorization/">User Creation and Authorization</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/password-management/">Password Management</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/service-alert-management/">Service Alert Management</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Troubleshooting</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshooting-guide/">Troubleshooting Guide</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/training-video/">Training Videos</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshoot-mouse-missalignment/">Troubleshoot Mouse Misalignment Issues</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshoot-dual-mouse-support/">Troubleshoot Dual Mouse support</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changelogs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Platform</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../changelogs/platform/">ROCC Server</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">On-Prem</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../changelogs/application/">ROCC Application</a>
+</li>
+            
+<li >
+    <a href="../../changelogs/rocc-surfacepro/">ROCC Device(SurfacePro)</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../update-existing.customer/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../testing-validation/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#hardware-integration">Hardware Integration</a></li>
+            <li><a href="#rocc-deployment-sequence">ROCC Deployment Sequence</a></li>
+        <li class="main "><a href="#rocc-central-manager-installation-instructions">ROCC Central Manager – Installation Instructions</a></li>
+            <li><a href="#installation-location">Installation Location</a></li>
+            <li><a href="#prerequisite">Prerequisite</a></li>
+            <li><a href="#installation-steps">Installation steps</a></li>
+        <li class="main "><a href="#rocc-command-center-installation-instructions">ROCC Command Center – Installation Instructions</a></li>
+            <li><a href="#prerequisite_1">Prerequisite</a></li>
+            <li><a href="#infrastructure">Infrastructure</a></li>
+            <li><a href="#network">Network</a></li>
+            <li><a href="#rocc-command-center-dpeloyment-diagram">ROCC Command Center Dpeloyment Diagram</a></li>
+            <li><a href="#installation-steps_1">Installation Steps</a></li>
+        <li class="main "><a href="#rocc-technologist-client-installation-instructions">ROCC Technologist Client - Installation Instructions</a></li>
+            <li><a href="#typical-installation-location">Typical Installation Location</a></li>
+            <li><a href="#prerequisites-customer-provided-and-configured">Prerequisites - Customer provided and configured</a></li>
+            <li><a href="#infrastructure_1">Infrastructure</a></li>
+            <li><a href="#network_1">Network</a></li>
+            <li><a href="#rocc-technologist-station">ROCC Technologist Station</a></li>
+        <li class="main "><a href="#rocc-spoke-relay-installation-instructions">ROCC Spoke Relay - Installation Instructions</a></li>
+            <li><a href="#typical-installation-location_1">Typical Installation Location</a></li>
+            <li><a href="#prerequisites-customer-provided-and-configured_1">Prerequisites - Customer provided and configured</a></li>
+            <li><a href="#infrastructure_2">Infrastructure</a></li>
+            <li><a href="#network_2">Network</a></li>
+            <li><a href="#rocc-spoke-relay-equipment-room">ROCC Spoke Relay Equipment Room</a></li>
+            <li><a href="#installation-steps_2">Installation Steps</a></li>
+        <li class="main "><a href="#hardware-is-unconfiguredfactory-prior-to-delivery-to-customer">Hardware is unconfigured/factory prior to delivery to customer</a></li>
+            <li><a href="#typical-installation-location_2">Typical Installation Location</a></li>
+            <li><a href="#prerequisites-customer-provided-and-configured_2">Prerequisites – Customer provided and configured</a></li>
+            <li><a href="#infrastructure_3">Infrastructure</a></li>
+            <li><a href="#network_3">Network</a></li>
+            <li><a href="#installation-steps_3">Installation Steps</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="hardware-integration">Hardware Integration</h2>
+<h3 id="rocc-deployment-sequence">ROCC Deployment Sequence</h3>
+<p><img alt="" src="../media/sequence.png" /></p>
+<h2 id="rocc-central-manager-installation-instructions">ROCC Central Manager – Installation Instructions</h2>
+<p>The ROCC Central Manager is a one rack unit hardware appliance that is used to manage and configure the ROCC Spoke Relay Transmitters and ROCC Command Center Receivers. </p>
+<h4 id="installation-location">Installation Location</h4>
+<p>Customer’s data center</p>
+<h4 id="prerequisite">Prerequisite</h4>
+<p>Infrastructure </p>
+<p>1 x NEMA 5-15R Power Outlets 
+1 x RJ45 Network Port and 2 x Cat5e or better network cable </p>
+<p><img alt="" src="../media/HWInst1.png" /></p>
+<p>Network 
+1 x Configured network port with intranet and internet access </p>
+<h4 id="installation-steps">Installation steps</h4>
+<p>Please contact your Philips Remote Installation Engineer. The Philips Remote Installation Engineer will be accessing a web application to verify installation and configuration settings. </p>
+<ol>
+<li>Rack mount the ROCC Central Manager</li>
+<li>Connect a customer provided network cable to the RJ45 network port above the blue USB ports on the ROCC Central Manager</li>
+</ol>
+<p><img alt="" src="../media/HWInst2.png" /></p>
+<ol>
+<li>Connect the power from the ROCC Central Manager to customer provided power outlet</li>
+<li>Please contact your Philips Remote Installation Engineer so they can verify connectivity from the ROCC Central Manager to the ROCC Application Server</li>
+<li>Installation Complete</li>
+</ol>
+<h2 id="rocc-command-center-installation-instructions">ROCC Command Center – Installation Instructions</h2>
+<p>The ROCC Command Center is the physical station where an Expert User can communicate, request, and accept remote support to a Technologist Desk and view and control the associated Imaging Console Computer.</p>
+<h4 id="prerequisite_1">Prerequisite</h4>
+<ol>
+<li>ROCC Command Centers are a customer identified and dedicated space at one of the customer’s site locations. </li>
+</ol>
+<h4 id="infrastructure">Infrastructure</h4>
+<ol>
+<li>6 x NEMA 5-15R Power Outlets</li>
+<li>
+<p>2 x RJ45 Network Port and 2 x Cat5e or better network cable</p>
+<p><img alt="" src="media/cc1.png" /></p>
+</li>
+<li>
+<p>1 x Command Center Client Computer with RJ45 network port 
+and 2 USB2.0 or better ports</p>
+</li>
+</ol>
+<h4 id="network">Network</h4>
+<p>2 x Configured network port with intranet and internet access</p>
+<h4 id="rocc-command-center-dpeloyment-diagram">ROCC Command Center Dpeloyment Diagram</h4>
+<p><img alt="" src="../media/HWInst3.png" /></p>
+<h4 id="installation-steps_1">Installation Steps</h4>
+<ol>
+<li>Locate the customer provided Command Center Client Computer</li>
+<li>Connect the power outlet from the Command Center Client Computer to a NEMA 5-15R power outlet</li>
+<li>Connect the customer provided network cable to the customer provided Command Center Client Computer</li>
+<li>Install the 3 x Philips provided displays</li>
+<li>Connect power from the 3 x Philips provided displays to 3 NEMA 5-15R power outlets</li>
+<li>Connect 1 x Philips provided displays to Command Center Client Computer using an HDMI or DisplayPort video cable</li>
+<li>Connect Philips provided USB webcam to a USB port on the Command Center Client Computer. Mount the USB webcam on one of the 3 Philips provided displays</li>
+<li>Identify the correct ROCC Command Center Receiver to be installed via MAC address or serial number. The MAC address and serial number can be located on the bottom of the unit.</li>
+<li>Connect 2 x Philips provided displays to the 2 x DVI ports on the back of the ROCC Command Center Receiver with a DVI cable.</li>
+<li>Plug the barrel connector of the power supply into the back of the ROCC Command Center Receiver. Plug the other end into a NEMA 5-15R outlet. Press the power button on the front of the ROCC Command Center Receiver, the LED indicator on the front should light up green.</li>
+<li>The Philips provided display connected to port 1 of the ROCC Command Center Receiver should display a boot screen</li>
+<li>Find the network cable provided by the customer. Plug this into the back of the ROCC Relay Spoke Transmitter. The LED indicators on the network port of the ROCC Relay Spoke Transmitter should start flashing after 2 minutes. </li>
+<li>Locate the Philips provided ROCC KM Switch</li>
+<li>Plug the power from the ROCC KM Switch into a NEMA 5-15R power outlet. </li>
+<li>Plug a USB Type B cable into the back of the ROCC KM SWITCH unit into port 1. Connect the USB Type A side into the back of the Command Center Client Computer into a USB 2.0 port</li>
+<li>Plug a second USB Type B cable into the back of the ROCC KM SWITCH unit into port number 2. Connect the USB Type A side into one of the USB ports on the back of the ROCC Command Center Receiver</li>
+<li>
+<p>Plug a USB Keyboard and USB Mouse into the Mouse and Keyboard port on the back of the ROCC KM SWITCH unit. The Mouse and Keyboard port are located on the left of Port 4, this is circled in the figure below. </p>
+<p><img alt="" src="../media/HWInst4.png" /></p>
+</li>
+<li>
+<p>Please contact your Philips Remote Installation Engineer so they can verify connectivity from the ROCC Central Manager to the ROCC Command Center Receiver</p>
+</li>
+<li>Installation Complete</li>
+</ol>
+<h2 id="rocc-technologist-client-installation-instructions">ROCC Technologist Client - Installation Instructions</h2>
+<p>The ROCC Technologist Client is the interface for the Technologist to communicate, request, and accept remote assistance from an Expert User accessing from a ROCC Command Center or an ROCC Anywhere Application.</p>
+<h4 id="typical-installation-location">Typical Installation Location</h4>
+<p>At a location on the Technologist’s Desk that provides a good viewing angle and distance. The ROCC Technologist Client should as also be within arm’s reach for easy access to the touch screen interface. </p>
+<h4 id="prerequisites-customer-provided-and-configured">Prerequisites - Customer provided and configured</h4>
+<h4 id="infrastructure_1">Infrastructure</h4>
+<ol>
+<li>1 x NEMA 5-15R Power Outlet</li>
+<li>
+<p>1 x RJ45 Network Port and 1 x Cat5e or better network cable</p>
+<p><img alt="" src="media/HWInst9.png" /></p>
+</li>
+<li>
+<p>1 x 12.8” x 15.5” x 6.3” surface on the Technologist table for placement of the ROCC Technologist Client. </p>
+</li>
+</ol>
+<h4 id="network_1">Network</h4>
+<p>1 x Configured network port with intranet and internet access</p>
+<h4 id="rocc-technologist-station">ROCC Technologist Station</h4>
+<p><img alt="" src="../media/HWInst5.png" /></p>
+<p>Installation Steps</p>
+<ol>
+<li>The installation of the ROCC Technologist Client will not have any impact on the Imaging Scanner. However, depending on the physical space constraints of the Technologist desk it may be ideal install when the Technologist is in between patients and can vacate the desk area.</li>
+<li>Install the ROCC Technologist Client dock. This is the Kensington SD7000 dock. Connect the power connector from the dock to an available outlet or power strip.</li>
+<li>Install the dock lock.</li>
+<li>Connect the customer provided network cable to the network port on the back of the Kensington SD7000 dock.</li>
+<li>Identify the correct ROCC Technologist Client. The Client should be labeled, or verification can be performed by referencing the serial number on the [customer config sheet document]</li>
+<li>Install the ROCC Technologist Client by sliding it into the ROCC Technologist Client dock.</li>
+<li>Power on the ROCC Technologist Client by holding the power button on the top right-hand side of the Client until you see a windows logo on screen.</li>
+<li>Please contact your Philips Remote Installation Engineer to so they can verify connectivity of the ROCC Technologist Client to the ROCC Application Manager</li>
+<li>Installation Complete</li>
+</ol>
+<h2 id="rocc-spoke-relay-installation-instructions">ROCC Spoke Relay - Installation Instructions</h2>
+<p>The ROCC Spoke Relay connects to the video and USB ports of the Imaging Console Computer. The video connection provides a replicated view of the Imaging Console Computer for Expert Users at Command Center Stations or ROCC Anywhere Application. The video output of the Imaging Console Computer is reproduced to provide a video connection for the Local Technologist and the ROCC Spoke Relay.   </p>
+<h4 id="typical-installation-location_1">Typical Installation Location</h4>
+<p>In the Equipment Rack</p>
+<h4 id="prerequisites-customer-provided-and-configured_1">Prerequisites - Customer provided and configured</h4>
+<h4 id="infrastructure_2">Infrastructure</h4>
+<ol>
+<li>2 x C13 Power Outlets</li>
+<li>
+<p>1 x RJ45 Network Port and 1 x Cat5e or better network cable</p>
+<p><img alt="" src="../media/HWInst8.png" /></p>
+</li>
+</ol>
+<h4 id="network_2">Network</h4>
+<p>1 x Configured network port with intranet and internet access</p>
+<h4 id="rocc-spoke-relay-equipment-room">ROCC Spoke Relay Equipment Room</h4>
+<p><img alt="" src="media/spoke_relay2.png" /></p>
+<h4 id="installation-steps_2">Installation Steps</h4>
+<p>Please perform when scanner is NOT in use. Please perform during off hours.
+Please contact your Philips Remote Installation Engineer. The Philips Remote Installation Engineer will be accessing a web application to verify installation and configuration settings. </p>
+<ol>
+<li>Identify the correct ROCC Relay Spoke Transmitter to be installed via MAC address or serial number. The MAC address and serial number can be located on the bottom of the unit.</li>
+<li>
+<p>Plug the barrel connector of the power supply into the back of the ROCC Relay Spoke Transmitter. Plug the other end into the Imaging Equipment rack PDU using a NEMA 5-15R to C14 adapter cable. The LED indicator on the front of the ROCC Relay Spoke Transmitter should light up green.</p>
+<p><img alt="" src="../media/HWInst7.png" /></p>
+</li>
+<li>
+<p>Find the network cable provided by the customer. Plug this into the back of the ROCC Relay Spoke Transmitter. The LED indicators on the network port of the ROCC Relay Spoke Transmitter should start flashing after 2 minutes. </p>
+</li>
+<li>Locate the correct video splitter for this modality by referencing your [Configuration Sheet Name]. Connect the video splitter power into the Imaging Equipment rack PDU using a NEMA 5-15R to C14 adapter cable. The LED indicator should on. If the Imaging Console Computer is dual video, you will need to connect and power up two video splitters.</li>
+<li>Connect a video cable from the second output port of the video splitter(s) to the previously installed video input port of the ROCC Relay Spoke Transmitter.</li>
+<li>Verify what the video cable from the Imaging Console Computer is connected to. If you are in an equipment room, it will typically be connected to a video extender. Locate the video extender. If you are at the Technologist desk the video cable from the Imaging Console Computer should be connected to a computer monitor. Disconnect the video cable from the video extender or the computer monitor. Connect this cable to the input port of the video splitter(s).</li>
+<li>Using a new video cable please connect one end to the first output of the video splitter(s). Please connect the other end to the video extender or the computer monitor.</li>
+<li>Locate a USB Type B to USB Type A cable. Connect the type B side to the back of the ROCC Relay Spoke Transmitter. Connect the type A side to an open USB 2.0 port on Imaging Console Computer. Note that USB 2.0 ports are typically black and USB 3.0 ports are typically blue.</li>
+<li>Proceed to verify normal functionality at the Technologist desk. If there is no image on the Technologist Desk monitor the EDID setting will need to be configured on the video splitter. Please see EDID setting instructions in the Appendix.</li>
+<li>Once normal functionality at the Technologist desk is verified please contact your Philips Remote Installation Engineer so they can verify connectivity from the ROCC Central Manager to the ROCC Relay Spoke Transmitter.</li>
+<li>Installation Complete</li>
+</ol>
+<h2 id="hardware-is-unconfiguredfactory-prior-to-delivery-to-customer">Hardware is unconfigured/factory prior to delivery to customer</h2>
+<p>Philips will discuss with the customer whether the ROCC Hardware will be pre-configured or not. If Philips and the Customer agrees to deliver the ROCC Hardware unconfigured/factory settings prior to delivery, please follow the instructions in this section.</p>
+<h4 id="typical-installation-location_2">Typical Installation Location</h4>
+<p>Customer Data Center or Customer staging area</p>
+<h4 id="prerequisites-customer-provided-and-configured_2">Prerequisites – Customer provided and configured</h4>
+<h4 id="infrastructure_3">Infrastructure</h4>
+<ol>
+<li>
+<p>1 x NEMA 5-15R Power Outlets per ROCC Spoke Relay Transmitter or ROCC Command Center Receiver</p>
+</li>
+<li>
+<p>1 x RJ45 Network Port and 1 x Cat5e or better network cable per ROCC Spoke Relay Transmitter or ROCC Command Center Receiver</p>
+</li>
+</ol>
+<h4 id="network_3">Network</h4>
+<ol>
+<li>1 x Configured network port with intranet and internet access per ROCC Spoke Relay Transmitter or ROCC Command Center Receiver</li>
+</ol>
+<h4 id="installation-steps_3">Installation Steps</h4>
+<ol>
+<li>With your Philips Remote Installation Engineer please complete  ROCC Central Manger Installation and Configuration</li>
+<li>Plug and power on as many ROCC Spoke Relay Transmitters or ROCC Command Center Receivers as your infrastructure permits. There is no limit to the number that can be configured simultaneously. The more that are connected the faster the configuration process.</li>
+<li>Connect as many ROCC Spoke Relay Transmitters or ROCC Command Center Receivers to your network as your infrastructure permits, again, there is no limit. </li>
+<li>Contact your Philips Remote Installation Engineer, they will be able to remotely configure all ROCC Spoke Relay Transmitters and ROCC Command Center Receivers.</li>
+<li>Power down, disconnect and repackage ROCC Hardware components. </li>
+<li>Installation Complete</li>
+</ol></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright © 2020, Philips, All rights reserved.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../jquery.tablesorter.min.js" defer></script>
+        <script src="../../extra.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

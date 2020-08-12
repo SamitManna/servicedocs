@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>ROCC Device(SurfacePro) - ROCC Service Docs Portal</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../extra.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">ROCC Service Docs Portal</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../..">Welcome</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer Checklist <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/deployment-view/">Deployment Views</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/it-operation-request-for-ROCC/">IT Specification</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/customer-workflow-getting-started/">Customer workflow finalization</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/master-data-management/">Management</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product Installation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../Production_Installation/platform-installation/">Platform Installation</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/hardware-integration/">Hardware Deployment</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/KVM-Infra-Management/">Central Manager(KVM Infra management)</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/application-server-installation/">Application Server (On-Prem)</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/Command-Center/">Command Center</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/Device-installation/">Device(spoke) Installation</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/surfacePro-installation/">SurfacePro installation</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/anywhere-app-installation/">Anywhere App installation</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/boxilla-tx-rx-upgrade/">Boxilla Upgrade</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Customer On-boarding</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Production_Installation/new-customer-onboarding/">New customer onboarding</a>
+</li>
+            
+<li >
+    <a href="../../Production_Installation/update-existing.customer/">Updates to existing customer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Integration</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Production_Installation/hardware-integration/">Hardware Integration</a>
+</li>
+            
+<li >
+    <a href="../../Production_Installation/testing-validation/">Testing and Validation</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Serviceability</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Serviceability/admin-workflow/">Admin Workflow</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/audit-Logging/">Audit viewing</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/hsdp-log-viewer/">HSDP Logs viewing</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/device-enrollement/">Device Enrollment</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/FSE-on-boarding/">FSE On-boarding</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/usercreation-authorization/">User Creation and Authorization</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/password-management/">Password Management</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/service-alert-management/">Service Alert Management</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Troubleshooting</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshooting-guide/">Troubleshooting Guide</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/training-video/">Training Videos</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshoot-mouse-missalignment/">Troubleshoot Mouse Misalignment Issues</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshoot-dual-mouse-support/">Troubleshoot Dual Mouse support</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changelogs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Platform</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../platform/">ROCC Server</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">On-Prem</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../application/">ROCC Application</a>
+</li>
+            
+<li class="active">
+    <a href="./">ROCC Device(SurfacePro)</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../application/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#v100-rc12">v1.0.0-rc12</a></li>
+            <li><a href="#build-version">Build Version</a></li>
+            <li><a href="#change-log">Change log</a></li>
+            <li><a href="#service-notes">Service Notes</a></li>
+        <li class="main "><a href="#v100-rc03">v1.0.0-rc03</a></li>
+            <li><a href="#build-version_1">Build Version</a></li>
+            <li><a href="#service-notes_1">Service Notes</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="v100-rc12">v1.0.0-rc12</h2>
+<h3 id="build-version">Build Version</h3>
+<ul>
+<li>rocc-surface-pro-installer: v1.0.0-rc12</li>
+</ul>
+<h3 id="change-log">Change log</h3>
+<ul>
+<li><strong>improvment:</strong> Surelock has been upgraded to v2.33.14</li>
+<li><strong>improvment:</strong> Script improvements - use local installers, user manual link, icons </li>
+</ul>
+<h3 id="service-notes">Service Notes</h3>
+<h4 id="update-instructions">Update instructions</h4>
+<ol>
+<li>Exit from Surelock kiosk mode</li>
+<li>login as ADMIN user (azure AD)</li>
+<li>Download the build rocc-surface-pro-installer-VERSION.zip from the repository to C:\temp</li>
+<li>Extract the zip file on C:\temp folder</li>
+<li>Go to C:\temp\rocc-surface-pro-installer-VERSION</li>
+<li>Select Update.bat file and right click then select “Properties”, check “Unblock” checkbox under Security and click Apply then Ok</li>
+<li>Select Update.bat file and right click then select “Run as administrator”
+    <code>Installation begins
+    Once the installation is completed, Press any key to continue</code></li>
+<li>SureLock - Configure Windows Administrator Account window opens</li>
+<li>Verify that "<strong>Login using existing account</strong>" radio button is selected</li>
+<li>Verify that valid user credentials are provided and click on <strong>Validate</strong>. </li>
+<li>Verify that both the checkbox options are selectec.
+    <code>" Disable User Account Control (UAC) prompt " 
+    " Autologon on Boot up "</code></li>
+<li>Click on <strong>Start Kiosk</strong> to proceed.</li>
+<li>Click <strong>Yes</strong> on display of reboot confirmation window</li>
+<li>The device enters into Kiosk mode after reboot and the SureLock screen displays.</li>
+<li>Close the running application using keyboard shortcut (ALT + Fn + F4)</li>
+<li>Tap/click 5 times anywhere on the screen to enter into SureLock Settings. The Password window displays.</li>
+<li>Enter the Admin password</li>
+<li>Click OK to proceed. The Main Menu displays</li>
+<li>Click on <strong>Import/Export Settings</strong></li>
+<li>Click <strong>Import From File</strong></li>
+<li>Select <strong>C:\Users\SureLock.settings</strong> path and Click <strong>OK</strong></li>
+<li>Click <strong>OK</strong> once import is successful, Click <strong>Done</strong> to return to the Main Menu.</li>
+<li>Click <strong>Done</strong> to home screen. Verify the Surelock home screen icons are displayed </li>
+<li>Click Reboot icon on taskbar to reboot the device. </li>
+<li>Click Yes to reboot</li>
+<li>Once the reboot is completed, Rocc application and Microsoft teams application will be auto launched and keep the Rocc application page open</li>
+</ol>
+<h2 id="v100-rc03">v1.0.0-rc03</h2>
+<h3 id="build-version_1">Build Version</h3>
+<ul>
+<li>rocc-surface-pro-installer: v1.0.0-rc03</li>
+</ul>
+<h4 id="change-log_1">Change log</h4>
+<ul>
+<li>initial release</li>
+</ul>
+<h3 id="service-notes_1">Service Notes</h3>
+<ul>
+<li>refer to install instructions</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright © 2020, Philips, All rights reserved.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../jquery.tablesorter.min.js" defer></script>
+        <script src="../../extra.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

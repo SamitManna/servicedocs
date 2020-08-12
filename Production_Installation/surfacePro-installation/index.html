@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>SurfacePro installation - ROCC Service Docs Portal</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../extra.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">ROCC Service Docs Portal</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../..">Welcome</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer Checklist <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/deployment-view/">Deployment Views</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/it-operation-request-for-ROCC/">IT Specification</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/customer-workflow-getting-started/">Customer workflow finalization</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/master-data-management/">Management</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product Installation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../platform-installation/">Platform Installation</a>
+</li>
+                                    
+<li >
+    <a href="../hardware-integration/">Hardware Deployment</a>
+</li>
+                                    
+<li >
+    <a href="../KVM-Infra-Management/">Central Manager(KVM Infra management)</a>
+</li>
+                                    
+<li >
+    <a href="../application-server-installation/">Application Server (On-Prem)</a>
+</li>
+                                    
+<li >
+    <a href="../Command-Center/">Command Center</a>
+</li>
+                                    
+<li >
+    <a href="../Device-installation/">Device(spoke) Installation</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">SurfacePro installation</a>
+</li>
+                                    
+<li >
+    <a href="../anywhere-app-installation/">Anywhere App installation</a>
+</li>
+                                    
+<li >
+    <a href="../boxilla-tx-rx-upgrade/">Boxilla Upgrade</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Customer On-boarding</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../new-customer-onboarding/">New customer onboarding</a>
+</li>
+            
+<li >
+    <a href="../update-existing.customer/">Updates to existing customer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Integration</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../hardware-integration/">Hardware Integration</a>
+</li>
+            
+<li >
+    <a href="../testing-validation/">Testing and Validation</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Serviceability</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Serviceability/admin-workflow/">Admin Workflow</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/audit-Logging/">Audit viewing</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/hsdp-log-viewer/">HSDP Logs viewing</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/device-enrollement/">Device Enrollment</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/FSE-on-boarding/">FSE On-boarding</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/usercreation-authorization/">User Creation and Authorization</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/password-management/">Password Management</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/service-alert-management/">Service Alert Management</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Troubleshooting</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshooting-guide/">Troubleshooting Guide</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/training-video/">Training Videos</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshoot-mouse-missalignment/">Troubleshoot Mouse Misalignment Issues</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshoot-dual-mouse-support/">Troubleshoot Dual Mouse support</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changelogs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Platform</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../changelogs/platform/">ROCC Server</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">On-Prem</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../changelogs/application/">ROCC Application</a>
+</li>
+            
+<li >
+    <a href="../../changelogs/rocc-surfacepro/">ROCC Device(SurfacePro)</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../Device-installation/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../anywhere-app-installation/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#surfacepro-setup">SurfacePro setup</a></li>
+        <li class="main "><a href="#linking-a-surface-pro-windows-10-tablet-to-azure-to-active-directory-domain">Linking a Surface Pro Windows 10 tablet to Azure to Active Directory Domain</a></li>
+            <li><a href="#prerequisites">Prerequisites</a></li>
+            <li><a href="#setting-up-the-tablet">Setting-up the Tablet</a></li>
+        <li class="main "><a href="#linking-the-surface-pro-tablet-to-azure-active-directory-domain">Linking the Surface Pro Tablet to Azure Active Directory Domain</a></li>
+        <li class="main "><a href="#kiosk-mode-installation">KIOSK mode installation</a></li>
+            <li><a href="#pre-conditions">Pre-conditions:</a></li>
+            <li><a href="#installation">Installation:</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h3 id="surfacepro-setup">SurfacePro setup</h3>
+<h3 id="linking-a-surface-pro-windows-10-tablet-to-azure-to-active-directory-domain">Linking a Surface Pro Windows 10 tablet to Azure to Active Directory Domain</h3>
+<h4 id="prerequisites">Prerequisites</h4>
+<p>• Make sure the Microsoft Surface Pro tablet for business is used.
+• Make sure the Microsoft Surface Pro tablet is working fine, without any physical damage.</p>
+<p>• Make sure the power adapter is plugged-in and power pin is attached to the magnetic power port of the tablet.</p>
+<blockquote>
+<p><strong>Note:</strong> It is recommended not to proceed further If you notice any physical damage to the
+device. Make a note of the damage, report to the concerned people and arrange for a
+replacement of the device.
+If you do not obey these instructions, there is a risk of property damage.</p>
+</blockquote>
+<p>• Verify if the power LED (White LED) is "ON" to confirm power supply to the device.
+• Ensure the Microsoft Surface Pro tablet has Internet connectivity either by ethernet connection
+(through Kensington docking station) or by Wi-Fi hotspot to the tablet.</p>
+<p>• If you are using ethernet connectivity, check the ethernet port lights to confirm if the network connection to the device is active:
+• The Link, (Green LED),
+• The Activity, (Orange LED)</p>
+<p>• If you are using Wi-Fi hotspot, ensure you have the right SSID, key and the configuration parameters in place.</p>
+<p>• Make sure, you have a new ROCC line Azure Active Directory Domain User Credentials ready before you start.</p>
+<p>• Make sure Microsoft Windows 10 business or professional edition is procured with the Surface Pro
+tablet.</p>
+<h4 id="setting-up-the-tablet">Setting-up the Tablet</h4>
+<ol>
+<li>Power on the device and let Windows 10 boot up.
+The Continue in selected language? page displays.</li>
+<li>Select English (United States), and click Yes.</li>
+</ol>
+<p><img alt="" src="../media/st_01.png" /></p>
+<ol>
+<li>Select United States and Click Yes.</li>
+</ol>
+<p><img alt="" src="../media/st_02.png" /></p>
+<ol>
+<li>Select US in keyboard layout and click Yes.</li>
+</ol>
+<p><img alt="" src="../media/sf_keyboard.png" /></p>
+<ol>
+<li>The page to add a second keyboard layout displays. Select Skip. The setup performs few back-end processes, this will take few minutes</li>
+</ol>
+<p><img alt="" src="../media/sf_secondkb.png" /></p>
+<ol>
+<li>The Windows 10 License Agreement page displays. Read the license agreement and click Accept to proceed.</li>
+</ol>
+<p><img alt="" src="../media/st_license.png" /></p>
+<ol>
+<li>The Set up page displays. Select the Set up for an organization option and click Next</li>
+</ol>
+<p><img alt="" src="../media/st_08.png" /></p>
+<ol>
+<li>The Sign in with Microsoft page displays. Enter the User Principle Name the Device ID, and click Next</li>
+</ol>
+<p><img alt="" src="../media/st_Signin.png" /></p>
+<blockquote>
+<p><strong>Note:</strong> 
+Make sure the account used to login must have local administrative privileges on the tablet.
+For example, you can use the user account that was used for the first time when the tablet was set
+up, or you can also use a local administrator account to log in and perform Azure AD join process.</p>
+</blockquote>
+<ol>
+<li>Enter password.</li>
+</ol>
+<p><img alt="" src="../media/st_password.png" /></p>
+<p>The Azure Active Directory Domain joining process will be initiated in the background</p>
+<blockquote>
+<p><strong>Note:</strong> If you encounter any error during this process, try again with the credentials. If you do not succeed,
+please contact the ROCC Service Organization for troubleshooting process.</p>
+</blockquote>
+<ol>
+<li>The Do more across devices with activity history page displays. Click No.</li>
+</ol>
+<p><img alt="" src="../media/st_13.png" /></p>
+<ol>
+<li>The Choose privacy settings for your device page displays. Choose the setting as mentioned below. Click Accept.
+The Azure ID User Profile is created in the background. </li>
+</ol>
+<p><img alt="" src="../media/st_privacy02.png" /></p>
+<ol>
+<li>The user Desktop will be presented. This might take several minutes</li>
+</ol>
+<h3 id="linking-the-surface-pro-tablet-to-azure-active-directory-domain">Linking the Surface Pro Tablet to Azure Active Directory Domain</h3>
+<ol>
+<li>
+<p>Once Windows 10 Desktop is presented after successful setup of the tablet, do the following:</p>
+</li>
+<li>
+<p>Navigate to Windows Settings window.</p>
+</li>
+</ol>
+<p><img alt="" src="../media/st_az1.png" /></p>
+<ol>
+<li>Select Acoounts </li>
+</ol>
+<p><img alt="" src="../media/st_az2.png" /></p>
+<ol>
+<li>Select Access work or school option</li>
+</ol>
+<p><img alt="" src="../media/st_az3.png" /></p>
+<ol>
+<li>In Microsoft account page, select Join this device to Azure Active Directory link under Alternate actions.</li>
+</ol>
+<p><img alt="" src="../media/st_az4.png" /></p>
+<ol>
+<li>Enter the complete user principle name in the Work or school account field.</li>
+</ol>
+<p><img alt="" src="../media/st_az05.png" /></p>
+<ol>
+<li>Enter the password and select Next</li>
+</ol>
+<p><img alt="" src="../media/st_az06.png" /></p>
+<ol>
+<li>
+<p>The process of linking the Microsoft Surface Pro Tablet with the ROCC Azure Active Directory in
+initiated in the background and the message "Just a moment" displays</p>
+</li>
+<li>
+<p>Click Join in the Make sure this is your organization page after verifying the details.</p>
+</li>
+</ol>
+<p><img alt="" src="../media/st_az08.png" /></p>
+<blockquote>
+<p><strong>Note:</strong> The tablet is being connected to the domain in the background and this process might take few
+minutes.</p>
+</blockquote>
+<ol>
+<li>Once the tablet is successfully connected to the ROCC Azure AD domain, the You're all set! page displays.</li>
+<li>Click Done.</li>
+<li>You will be taken back to the Settings --&gt; Accounts page. The Connected to ROCC's Azure AD
+message displays with the user principle name that was used join the tablet to Azure AD as shown
+below.</li>
+</ol>
+<p><img alt="" src="../media/st_az09.png" /></p>
+<ol>
+<li>Reboot the Tablet and login with the Azure Active Directory account.</li>
+</ol>
+<h3 id="kiosk-mode-installation">KIOSK mode installation</h3>
+<h4 id="pre-conditions">Pre-conditions:</h4>
+<ul>
+<li>SurfacePro should be joined to Azure domain</li>
+<li>Verify that device policy has been assgigned to the group for which SurfacePro is added </li>
+</ul>
+<h4 id="installation">Installation:</h4>
+<ul>
+<li>Download rocc-suface-pro-install-VERSION.zip to c:\temp folder</li>
+<li>unzip rocc-suface-pro-install-VERSION.zip</li>
+<li>goto folder C:\temp\rocc-suface-pro-install-VERSION </li>
+<li>Right Click on Install.bat file and Run as Administrator.<ul>
+<li>Enter the customer org  name in rocc for configuring ROCC Application URL on promt</li>
+</ul>
+</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright © 2020, Philips, All rights reserved.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../jquery.tablesorter.min.js" defer></script>
+        <script src="../../extra.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>ROCC Server - ROCC Service Docs Portal</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../extra.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">ROCC Service Docs Portal</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../..">Welcome</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer Checklist <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/deployment-view/">Deployment Views</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/it-operation-request-for-ROCC/">IT Specification</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/customer-workflow-getting-started/">Customer workflow finalization</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/master-data-management/">Management</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product Installation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../Production_Installation/platform-installation/">Platform Installation</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/hardware-integration/">Hardware Deployment</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/KVM-Infra-Management/">Central Manager(KVM Infra management)</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/application-server-installation/">Application Server (On-Prem)</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/Command-Center/">Command Center</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/Device-installation/">Device(spoke) Installation</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/surfacePro-installation/">SurfacePro installation</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/anywhere-app-installation/">Anywhere App installation</a>
+</li>
+                                    
+<li >
+    <a href="../../Production_Installation/boxilla-tx-rx-upgrade/">Boxilla Upgrade</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Customer On-boarding</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Production_Installation/new-customer-onboarding/">New customer onboarding</a>
+</li>
+            
+<li >
+    <a href="../../Production_Installation/update-existing.customer/">Updates to existing customer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Integration</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Production_Installation/hardware-integration/">Hardware Integration</a>
+</li>
+            
+<li >
+    <a href="../../Production_Installation/testing-validation/">Testing and Validation</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Serviceability</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Serviceability/admin-workflow/">Admin Workflow</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/audit-Logging/">Audit viewing</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/hsdp-log-viewer/">HSDP Logs viewing</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/device-enrollement/">Device Enrollment</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/FSE-on-boarding/">FSE On-boarding</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/usercreation-authorization/">User Creation and Authorization</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/password-management/">Password Management</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/service-alert-management/">Service Alert Management</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Troubleshooting</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshooting-guide/">Troubleshooting Guide</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/training-video/">Training Videos</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshoot-mouse-missalignment/">Troubleshoot Mouse Misalignment Issues</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshoot-dual-mouse-support/">Troubleshoot Dual Mouse support</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changelogs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Platform</a>
+    <ul class="dropdown-menu">
+            
+<li class="active">
+    <a href="./">ROCC Server</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">On-Prem</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../application/">ROCC Application</a>
+</li>
+            
+<li >
+    <a href="../rocc-surfacepro/">ROCC Device(SurfacePro)</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../../TrainingAndTroubleshooting/troubleshoot-dual-mouse-support/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../application/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#v100-rc12">v1.0.0-rc12</a></li>
+            <li><a href="#build-version">Build Version</a></li>
+            <li><a href="#service-notes">Service Notes</a></li>
+        <li class="main "><a href="#v100-rc11-16jul2020">v1.0.0-rc11 - 16Jul2020</a></li>
+            <li><a href="#build-version_1">Build Version</a></li>
+            <li><a href="#service-notes_1">Service Notes</a></li>
+            <li><a href="#change-log">Change log</a></li>
+        <li class="main "><a href="#v100-rc10-10jul2020">v1.0.0-rc10 - 10Jul2020</a></li>
+            <li><a href="#build-version_2">Build Version</a></li>
+            <li><a href="#changelog">Changelog</a></li>
+            <li><a href="#service-notes_2">Service Notes</a></li>
+        <li class="main "><a href="#v100-rc3-29apr2020">v1.0.0-rc3 - 29Apr2020</a></li>
+            <li><a href="#build-version_3">Build Version</a></li>
+            <li><a href="#changelog_1">Changelog:</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="v100-rc12">v1.0.0-rc12</h2>
+<h3 id="build-version">Build Version</h3>
+<ul>
+<li>ROCC: v1.0.0-rc12</li>
+<li>rocc-onprem-installer: v1.0.0-rc12</li>
+<li>rocc-console-service: v1.0.0-tc12</li>
+<li>rocc-surface-pro-installer: v1.0.0-rc5</li>
+</ul>
+<h4 id="software-components">Software Components</h4>
+<ul>
+<li>BlackBox<ul>
+<li>Boxzilla - v3.5.2</li>
+<li>RemoteApp - v1.3.3</li>
+<li>Firmware - v5.2.40</li>
+<li>Glide-and-switch-sw - v1.0</li>
+<li>Freedom Switch - 2.0.4</li>
+</ul>
+</li>
+</ul>
+<h3 id="service-notes">Service Notes</h3>
+<h4 id="update-instructions">Update instructions</h4>
+<ol>
+<li>Download the rocc-ops-v1.0.0-rc12.zip <ul>
+<li>For provisioning new rooms to existing customer follow the below steps:<ul>
+<li>Note, update <strong>config.ini</strong> as recommended (no additional changes needed)</li>
+<li>Update customer excel sheet with new rooms (You can delete/retain older rooms)</li>
+<li>Run the command
+    &gt; <em><strong>python rocc_service_cli.py</strong></em></li>
+<li>Choose the <strong>8</strong> to provison new rooms</li>
+<li>Follow the steps interactively</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="v100-rc11-16jul2020">v1.0.0-rc11 - 16Jul2020</h2>
+<h3 id="build-version_1">Build Version</h3>
+<ul>
+<li>ROCC: v1.0.0-rc11</li>
+<li>rocc-onprem-installer: v1.0.0-rc11</li>
+<li>rocc-console-service: v1.0.0-tc11</li>
+<li>rocc-surface-pro-installer: v1.0.0-rc5</li>
+</ul>
+<h4 id="software-components_1">Software Components</h4>
+<ul>
+<li>BlackBox<ul>
+<li>Boxzilla - v3.5.2</li>
+<li>RemoteApp - v1.3.3</li>
+<li>Firmware - v5.2.40</li>
+<li>Glide-and-switch-sw - v1.0</li>
+<li>Freedom Switch - 2.0.4</li>
+</ul>
+</li>
+</ul>
+<h3 id="service-notes_1">Service Notes</h3>
+<h4 id="pre-check">Pre-Check</h4>
+<h4 id="update-instructions_1">Update instructions</h4>
+<ul>
+<li>
+<p>Upgrade ROCC services with RC11 version</p>
+</li>
+<li>
+<p>Console service upgrade for all the customer</p>
+</li>
+</ul>
+<pre><code>    cd /opt/docker-compose
+    cp docker-compose.yaml docker-componse.yaml.bkp
+    docker-componse down
+    #update following values in docker-compose.yaml
+    vi docker-compose.yml
+    #replace RC10 with RC11 
+    #run below command to update the container
+    docker-compose up -d
+</code></pre>
+
+<h3 id="change-log">Change log</h3>
+<p><strong>Bug-fixes</strong>:</p>
+<ul>
+<li>Intermittent Issue while accessing Twilio APIs</li>
+<li>97062-Pre-Market: Expert users are not able to choose a command center when the corresponding site does not have any rooms associated</li>
+<li>97093-Device: Room list is not displayed under rooms</li>
+<li>86863-In Kiosk mode, we need to add to the network(wifi) everytime when reboot the machine</li>
+<li>89840-Admin_Manage location and contacts, the type of contact as 'Scheduler'/'Frontdesk' is not specified on the UI</li>
+<li>93017-Kibana logs_console logs are not found in kibana for preprod env(https://siteeval01-rocc.cloud.pcftest.com/#/)</li>
+<li>93610-AV_Call: When two users are on AV call, the site name displayed for each contact under contact list must have hover option to display full address of the user.</li>
+<li>94227-Configuring User first name and last name in invitation mail</li>
+<li>94719-Admin_Edit_User: Place the cursor on First name, last name or email field and press enter, then an active user gets deactivated.</li>
+<li>95280-Emerald app_While connecting to dual head console, the image looks elongated on Y axis</li>
+<li>95543-View_Console: Multiple simultaneous views must not happen and incorrect view label is shown.</li>
+<li>95549-View_Console: When EU clicks on start view console , then incognito view mode(3 dots) must be disabled immediately.</li>
+<li>95601-AV_Call_Edit_Console: Authorize label and incoming AV call notification over lap on each other on device screen.</li>
+<li>95755-Device_Call: Outgoing call to EU must have location details too just like it appears on an incoming call.</li>
+<li>96004-RBAC_API_UserRoleMapping_Deletion of roles not happening, success response received for Delete APIs for incorrect userId and role</li>
+<li>96277-Certificate Issues</li>
+<li>96462-AV_Call: Audio input source drop down is not displayed properly when setting from AV call is clicked.</li>
+<li>96849-Email_Template: User Activation mails received have Last Name , First Name instead of First Name, Last Name in order.</li>
+<li>96850-About page address incomplete</li>
+<li>96891-View_Console: View console label disappears for few seconds when new Edit console request is made.</li>
+<li>96905-View_Console: Incorrect pop up message is displayed when View console session is initiated by Expert user for first time.</li>
+<li>97047-Edit/View_Console: When EU and tech are on AV call and if EU switches from 'Without hardware' to 'With hardware' , only View console icon is enabled.</li>
+<li>97065-Modality filter is not functioning properly when a different site is chosen</li>
+<li>97081-The viewing label is displayed at the device end even after the user's session is expired during a view console</li>
+<li>97096-Edit console: when the console request has got timed out the EU clicks on view for another room and pop up appearing as "do u want to stop viewing the timed-out room and start viewing the new room'</li>
+</ul>
+<h2 id="v100-rc10-10jul2020">v1.0.0-rc10 - 10Jul2020</h2>
+<h3 id="build-version_2">Build Version</h3>
+<ul>
+<li>ROCC: v1.0.0-rc10</li>
+<li>rocc-onprem-installer: v1.0.0-rc10</li>
+<li>rocc-console-service: v1.0.0-tc10</li>
+<li>rocc-surface-pro-installer: v1.0.0-rc5</li>
+</ul>
+<h4 id="software-components_2">Software Components</h4>
+<ul>
+<li>BlackBox<ul>
+<li>Boxzilla - v3.5.2</li>
+<li>RemoteApp - v1.3.3</li>
+<li>Firmware - v5.2.40</li>
+<li>Glide-and-switch-sw - v1.0</li>
+<li>Freedom Switch - 2.0.4</li>
+</ul>
+</li>
+</ul>
+<h3 id="changelog">Changelog</h3>
+<h4 id="newimprovments">New/Improvments</h4>
+<ul>
+<li>Video Call- Peer to Peer video calling functionality with multi camera support</li>
+<li>AV call stability</li>
+<li>UI/UX improvement –Desktop and Tablet to make it compliance with Philips Design</li>
+<li>EULA statement update – Draft version of EULA display during customer onboarding</li>
+<li>Edit and View console workflow stability</li>
+<li>Standardization of customer communication email templates to align with Philips Design</li>
+<li>Admin workflow improvement – fixed workflow issues</li>
+<li>Security fixes</li>
+<li>Performance Improvement – Improved  end to end workflow performance to have better customer experience</li>
+<li>Migration from Hasura (Open Source) to Hasura Pro for better management</li>
+<li>Feedback to the user on non supported browsers – Support only Chrome browser</li>
+<li>Pre-Market defect fixes</li>
+<li>Deployment improvements</li>
+<li>Logging improvements for better troubleshooting and Analytics</li>
+</ul>
+<h4 id="bug-fixes">Bug Fixes</h4>
+<ul>
+<li>Unable to deploy console service in non-proxy environment</li>
+<li>Admin_User management of a user in mixed mode(Through Excel sheet &amp; UI) is not consistent</li>
+<li>Call not established between technologist and expert user</li>
+<li>Certificate status keeps changing between Valid /non valid</li>
+<li>Multiple disconnect api calls are made on call end or logout scenarios</li>
+<li>Audio setting gets disabled: Graceful exit when audio devices are not selected</li>
+<li>Admin_Screen: Emails are not sent to some of the users after Re-invite.</li>
+<li>Presence of the user is sometimes not getting updated on the device which is already logged. Room presence is always shown busy</li>
+</ul>
+<h3 id="service-notes_2">Service Notes</h3>
+<h4 id="pre-check_1">Pre-Check</h4>
+<h4 id="update-instructions_2">Update instructions</h4>
+<h4 id="pre-check_2">Pre-Check</h4>
+<ol>
+<li>Download the rocc-ops-v1.0.0-rc10.zip</li>
+<li>Get the Customer config.ini file</li>
+<li>Verify if that the customer config.ini file is uptodate with the latest changes</li>
+<li>Verify the the Customer Onboarding excel sheet is as per v1.0.0-rc10 release </li>
+</ol>
+<h4 id="update-instructions_3">Update instructions</h4>
+<ol>
+<li>
+<p>Update Graphql       </p>
+<ul>
+<li>
+<p>Get the environment variable of respective environmenmt</p>
+<p><code>cf env &lt;rocc-graphal-internal-qa&gt;</code></p>
+</li>
+<li>
+<p>Update graphql-manifest file from the env in step 2</p>
+</li>
+<li>
+<p>Modify the applicaiton name etc in manifest file, this should be same as your environment app name.</p>
+</li>
+<li>
+<p>Create graphql key</p>
+<ul>
+<li>login to https://accounts.hasura-apm.rocc.live/ and create new project</li>
+<li>copy the key when new project is created and add it to env HASURA_GRAPHQL_PRO_KEY</li>
+<li>Also add another env HASURA_GRAPHQL_PRO_ENDPOINT: https://hasura-apm.rocc.live
+(Add this to manifest file created in step 2)</li>
+</ul>
+</li>
+<li>
+<p>Deploy the graphql
+    cf push -f manfiest.yaml</p>
+</li>
+<li>
+<p>Run Import Meta-data script for graphql</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Nginx Upgrade</p>
+<ul>
+<li>cf delete rocc-nginx-<appname></li>
+<li>cf add-network-policy rocc-nginx-<appname> --destination-app rocc-graphql-<appname> --protocol tcp --port 8080</li>
+<li>cf restage rocc-nginx-<appname></li>
+<li>cf map-route rocc-nginx-<appname> cloud.pcftest.com --hostname <customer-name></li>
+<li>Note: The nginx docker image is modified to alpine</li>
+</ul>
+</li>
+<li>
+<p>DB Updates</p>
+<ul>
+<li><em>table:</em> public.metasites
+     <em>new column:</em> name , <em>type:</em> text, <em>default:</em> NA</li>
+<li>table: rocc.remote_facility
+     new column: registered_count , type: integer, *default: 0</li>
+</ul>
+</li>
+<li>
+<p>Update EMAIL, EULA templates for all existing customers</p>
+<ul>
+<li>In rocc-ops, update the config.ini to corresponding customer</li>
+<li>EMAIL template updates:<ul>
+<li>Run the rocc_service_cli.py by running the below command 
+    <code>python rocc_service_cli.py</code>
+    <code>1. Choose option "6" on the prompt to update EMAIL Templates for customer
+        2. Confirm to proceed with [Y, y]
+        3. Enter root-org admin credentials when prompted</code></li>
+</ul>
+</li>
+<li>EULA updates:<ul>
+<li>Run the rocc_service_cli.py by running the below command 
+    <code>python rocc_service_cli.py</code>
+    <code>1. Choose option "5" on the prompt to update EULA documents for customer
+        2. Confirm to proceed with [Y, y]</code></li>
+</ul>
+</li>
+<li>Update for all the customers so that the latest EMAIL-Temaplate and EULA content is refected everywhere </li>
+</ul>
+</li>
+<li>
+<p>Add DEVICEROLE in existing orgs in RBAC</p>
+<ul>
+<li>Open excel sheet of existing orgs</li>
+<li>Update role-permission-mapping sheet with latest actions</li>
+<li>Run the rocc_service_cli.py by running the below command 
+        <code>python rocc_service_cli.py</code></li>
+<li>Choose option <strong>3</strong> when its promted to update value
+    <code>Choose the update you want to proceed with:
+        1. Update Vault values [1]
+        2. Send user invitation mail [2]
+        3. Create/Update role permission mapping [3]
+        4. Add DEVICEROLE to existing devices [4]
+        Enter ["1", "2", "3" or "4"]: 4</code></li>
+<li>Enter Admin credentials when script will prompt for it</li>
+<li>User will get message that role permission mappings are created successfully
+    <code>Role Permission mappings are created successfully....</code></li>
+</ul>
+<p><strong><em>Add Newly created role to existing devices</em></strong>
+* Run the rocc_service_cli.py by running the below command 
+        <code>python rocc_service_cli.py</code>
+* Choose option <strong>4</strong> when its promted to update value
+    <code>Choose the update you want to proceed with:
+        1. Update Vault values [1]
+        2. Send user invitation mail [2]
+        3. Create/Update role permission mapping [3]
+        4. Add DEVICEROLE to existing devices [4]
+        Enter ["1", "2", "3" or "4"]: 4</code>
+* Enter Admin credentials when script will prompt for it
+* User will get message that role permission mappings are created successfully
+    <code>User Role Mappings are created successfully....</code></p>
+<p>***Take latest config.ini.New key PASSWORD_EXPIRY_DAYS is added in DEFAULT Section. </p>
+</li>
+<li>
+<p>Add new roles for existing orgs in RBAC</p>
+<ul>
+<li>Execute create_new_permissions.py script to add newly created permissions in that space</li>
+<li>Open excel sheet of existing orgs</li>
+<li>Update role-permission-mapping sheet with latest actions
+    <code>**Role**                **Resource**                                 **Actions**
+        ADMINROLE                   ADMIN           USER_ADD,USER_EDIT,USER_READ,USER_DELETE,LOCATION_EDIT,LOCATION_READ,ROOM_EDIT,ROOM_READ
+        EXPERTUSERROLE          CONSOLE         VIEW,EDIT
+        EXPERTUSERROLE          CALL            WEB_TO_WEB,WEB_TO_PHONE,ADD_PARTICIPANT,HYBRID_ROCC_CALL,VIDEO_CALL,DESKTOP_FULL_SCREEN
+        EXPERTUSERINCOGNITOROLE CONSOLE         VIEW,EDIT,VIEW_INCOGNITO
+        EXPERTUSERINCOGNITOROLE CALL            WEB_TO_WEB,WEB_TO_PHONE,ADD_PARTICIPANT,HYBRID_ROCC_CALL,VIDEO_CALL,DESKTOP_FULL_SCREEN
+        PROTOCOLMANAGERROLE         CONSOLE         VIEW,EDIT,EDIT_WITHOUT_AUTHORIZATION
+        PROTOCOLMANAGERROLE         CALL            WEB_TO_WEB,WEB_TO_PHONE,ADD_PARTICIPANT,HYBRID_ROCC_CALL,VIDEO_CALL,DESKTOP_FULL_SCREEN
+        TECHNOLOGISTROLE            CALL            WEB_TO_WEB,WEB_TO_PHONE,ADD_PARTICIPANT,HYBRID_ROCC_CALL,VIDEO_CALL</code></li>
+<li>Run the rocc_service_cli.py by running the below command 
+        <code>python rocc_service_cli.py</code></li>
+<li>Choose option <strong>3</strong> when its promted to update value
+    <code>Choose the update you want to proceed with:
+        1. Update Vault values [1]
+        2. Send user invitation mail [2]
+        3. Create/Update role permission mapping [3]
+        Enter ["1", "2" or "3"]: 3</code></li>
+<li>Enter Admin credentials when script will prompt for it</li>
+<li>User will get message that role permission mappings are created successfully
+    <code>Role Permission mappings are created successfully...</code></li>
+</ul>
+</li>
+<li>
+<p>Vault updates</p>
+<ul>
+<li>
+<p>Run the rocc_service_cli.py by running the below command 
+    <code>python rocc_service_cli.py</code></p>
+</li>
+<li>
+<p>Choose option <strong>1</strong> when its promted to update value<br />
+<code>Choose the update you want to proceed with:
+        1. Update Vault values [1]
+        2. Send user invitation mail [2]
+        Enter ["1" or "2", "3"]: 1</code></p>
+</li>
+<li>
+<p>Script will prompt for user to enter Vault Key</p>
+<p>Enter the Vault key you wish to update [key]: <strong>adminManualPath</strong> &amp; Enter</p>
+<p>Script will prompt for user to enter Vault value</p>
+<pre><code>Enter the Vault value you wish to update [value]: **https://rocc.file.core.windows.net/rocc/Manuals/Radiology%20Operations%20Command%20Center%20Admin%20Manual%20V1.0.pdf?st=2020-06-15T06%3A11%3A41Z&amp;se=2025-06-16T06%3A00%3A00Z&amp;sp=rl&amp;sv=2018-03-28&amp;sr=f&amp;sig=3Q6jNpnyzkT2zoJA%2BvjwPouskXE1MFJz2njuoIaR4bw%3D**
+</code></pre>
+<p>User will get message that vault values upated successfully as below</p>
+<pre><code>**Vault values updated Successfully**
+</code></pre>
+</li>
+<li>
+<p>Repeat the above steps under Vault updates, for below Valut Key and values for each customer</p>
+<p><strong>userManualPath</strong> Default value: <strong>https://rocc.file.core.windows.net/rocc/Manuals/Radiology%20Operations%20Command%20Center%20User%20Manual%20V1.0.pdf?st=2020-06-16T06%3A29%3A25Z&amp;se=2025-06-17T06%3A00%3A00Z&amp;sp=rl&amp;sv=2018-03-28&amp;sr=f&amp;sig=CtDY0mKiBGxmOC3fKK3%2BKpbEzuhdtlZ0iujYtPbwUeo%3D</strong></p>
+<pre><code>   **encryptionValue** Default value: **9D1F0F050D4216BFCA7DA70**
+</code></pre>
+<p><strong>customerAnalyticsLogConsent</strong> Default value: <strong>true</strong> , for actual customer we need to take their consent   </p>
+</li>
+</ul>
+</li>
+<li>
+<p>Instrumentation Key </p>
+<p>Verify the <strong>APPINSIGHTS_INSTRUMENTATIONKEY</strong> environment variable updated in all the application environment variables, If not please set the variable</p>
+</li>
+<li>
+<p>Update On-Prem ROCC Application server (Console Service)
+    <code>cd /opt/docker-compose
+        cp docker-compose.yaml docker-componse.yaml.bkp
+        docker-componse down
+        vi docker-componse.yaml
+        #update following values in docker-compose.yaml
+        #   replace RC3 with RC11
+        #   Add proxy.schema as environment Variable in docker-compose.yaml
+        #   Update proxy_ip and proxy_port to relevant values based on the VM proxy settings
+        #run below command to update the container
+        docker-compose up -d</code>    </p>
+</li>
+</ol>
+<h2 id="v100-rc3-29apr2020">v1.0.0-rc3 - 29Apr2020</h2>
+<h3 id="build-version_3">Build Version</h3>
+<ul>
+<li>ROCC: v1.0.0-rc02</li>
+<li>rocc-onprem-installer: v1.0.0-rc03</li>
+<li>rocc-console-service: v1.0.0-tc03</li>
+<li>rocc-surface-pro-installer: v1.0.0-rc03</li>
+</ul>
+<h4 id="software-versions">Software versions:</h4>
+<ul>
+<li>BlackBox Boxilla SW  -  v3.5.1</li>
+<li>BlackBox Firmware - v5.2.40</li>
+<li>BlackBox Emarald Remote App - v1.1.0</li>
+<li>BlackBox Glide &amp; Switch Software - v01.10</li>
+<li>Surelock - v2.32</li>
+</ul>
+<h3 id="changelog_1">Changelog:</h3>
+<ul>
+<li>Initial Release</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright © 2020, Philips, All rights reserved.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../jquery.tablesorter.min.js" defer></script>
+        <script src="../../extra.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

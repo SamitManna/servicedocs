@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Device(spoke) Installation - ROCC Service Docs Portal</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../extra.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">ROCC Service Docs Portal</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../..">Welcome</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer Checklist <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/deployment-view/">Deployment Views</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/it-operation-request-for-ROCC/">IT Specification</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/customer-workflow-getting-started/">Customer workflow finalization</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/master-data-management/">Management</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product Installation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../platform-installation/">Platform Installation</a>
+</li>
+                                    
+<li >
+    <a href="../hardware-integration/">Hardware Deployment</a>
+</li>
+                                    
+<li >
+    <a href="../KVM-Infra-Management/">Central Manager(KVM Infra management)</a>
+</li>
+                                    
+<li >
+    <a href="../application-server-installation/">Application Server (On-Prem)</a>
+</li>
+                                    
+<li >
+    <a href="../Command-Center/">Command Center</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">Device(spoke) Installation</a>
+</li>
+                                    
+<li >
+    <a href="../surfacePro-installation/">SurfacePro installation</a>
+</li>
+                                    
+<li >
+    <a href="../anywhere-app-installation/">Anywhere App installation</a>
+</li>
+                                    
+<li >
+    <a href="../boxilla-tx-rx-upgrade/">Boxilla Upgrade</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Customer On-boarding</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../new-customer-onboarding/">New customer onboarding</a>
+</li>
+            
+<li >
+    <a href="../update-existing.customer/">Updates to existing customer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Integration</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../hardware-integration/">Hardware Integration</a>
+</li>
+            
+<li >
+    <a href="../testing-validation/">Testing and Validation</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Serviceability</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Serviceability/admin-workflow/">Admin Workflow</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/audit-Logging/">Audit viewing</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/hsdp-log-viewer/">HSDP Logs viewing</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/device-enrollement/">Device Enrollment</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/FSE-on-boarding/">FSE On-boarding</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/usercreation-authorization/">User Creation and Authorization</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/password-management/">Password Management</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/service-alert-management/">Service Alert Management</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Troubleshooting</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshooting-guide/">Troubleshooting Guide</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/training-video/">Training Videos</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshoot-mouse-missalignment/">Troubleshoot Mouse Misalignment Issues</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshoot-dual-mouse-support/">Troubleshoot Dual Mouse support</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changelogs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Platform</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../changelogs/platform/">ROCC Server</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">On-Prem</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../changelogs/application/">ROCC Application</a>
+</li>
+            
+<li >
+    <a href="../../changelogs/rocc-surfacepro/">ROCC Device(SurfacePro)</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../Command-Center/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../surfacePro-installation/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#rocc-device-installation">ROCC Device Installation</a></li>
+            <li><a href="#how-to-configure-tx-without-boxilla">How to configure Tx without Boxilla</a></li>
+            <li><a href="#configuring-transmitter-connection">Configuring Transmitter Connection</a></li>
+            <li><a href="#configuring-connection-view-only">Configuring Connection – View Only</a></li>
+            <li><a href="#changing-display-resolution-on-transmitter">Changing Display resolution on Transmitter.</a></li>
+            <li><a href="#user-configuration-and-management">User configuration and Management</a></li>
+            <li><a href="#how-to-know-active-users">How to Know Active users</a></li>
+        <li class="main "><a href="#configuring-freedom-ii-glide-and-switch">Configuring Freedom II (Glide and switch)</a></li>
+        <li class="main "><a href="#spoke-relay-configuration-without-rocc-central-manager">Spoke Relay Configuration without ROCC Central Manager</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="rocc-device-installation">ROCC Device Installation</h2>
+<h3 id="how-to-configure-tx-without-boxilla">How to configure Tx without Boxilla</h3>
+<pre><code>• Connect Tx and RX back to back 
+• Power ON device
+• On Rx OSD &gt;&gt; Go To CONTROL Tab
+• Select Transmitter 
+• If you know IP address enter IP 192.168.1.22 &gt;&gt; click on apply
+• Click on Network to configure New IP address
+• If you don’t know IP address of Tx, then click on Discover and restart Tx
+• Tx IP will be displayed, then Click on Network to configure IP address
+• Now go to Boxilla &gt; Discover &gt; Add Manually &gt; enter the IP address of Rx/Tx &gt; click on get information
+</code></pre>
+<h3 id="configuring-transmitter-connection">Configuring Transmitter Connection</h3>
+<pre><code>• Go To connections &gt;&gt; Manage &gt;&gt; + Connection
+• Enter Connection Name and IP address
+• Click on Next
+</code></pre>
+<p><img alt="" src="media/tx1.png" /></p>
+<p>Select Connection Type Private or shared. If you select connection type PRIVATE, system will accessible by ONE user at any given point of time. If you select connection type SHARED, system will be accessible by MORE THAN ONE users at a time.</p>
+<p><img alt="" src="media/tx2.png" /></p>
+<h3 id="configuring-connection-view-only">Configuring Connection – View Only</h3>
+<pre><code>• Go To connections &gt;&gt; Manage &gt;&gt; + Connection
+• Enter Connection Name and IP address
+</code></pre>
+<p><img alt="" src="../media/tx3.png" /></p>
+<pre><code>• Select view only and click on NEXT &gt;&gt; Review and Save
+</code></pre>
+<p><img alt="" src="../media/tx4.png" /></p>
+<h3 id="changing-display-resolution-on-transmitter">Changing Display resolution on Transmitter.</h3>
+<pre><code>• Go to Devices &gt;&gt;Settings &gt;&gt; Click on Click on grey color botton (Round in shape with 3 dots on it), select edit settings
+</code></pre>
+<p><img alt="" src="../media/tx5.png" /></p>
+<p>Select desired screen resolution from dropdown (EDID Settings DVI 1) and save</p>
+<p><img alt="" src="../media/tx6.png" /></p>
+<h3 id="user-configuration-and-management">User configuration and Management</h3>
+<pre><code>• Go to user &gt;&gt; Manage &gt;&gt; +user
+• Enter desired username and password.
+</code></pre>
+<p><img alt="" src="../media/tx7.png" /></p>
+<pre><code>• Click on Next
+• Select user privilege and select Auto connect ON/OFF
+</code></pre>
+<p><img alt="" src="../media/tx8.png" /></p>
+<pre><code>• Adding devices to the users based on their Role. Click on grey color botton (Round in shape with 3 dots on it), then go to manage connections
+</code></pre>
+<p><img alt="" src="../media/tx9.png" /></p>
+<pre><code>•  Select the device and click on right arrow button
+</code></pre>
+<p><img alt="" src="../media/tx10.png" /></p>
+<pre><code>•  click on save.
+</code></pre>
+<p><img alt="" src="../media/tx11.png" /></p>
+<h3 id="how-to-know-active-users">How to Know Active users</h3>
+<p>Click on connection &gt;&gt; Active. This will display the active sessions</p>
+<p><img alt="" src="../media/tx12.png" /></p>
+<h2 id="configuring-freedom-ii-glide-and-switch">Configuring Freedom II (Glide and switch)</h2>
+<pre><code>• Download software on a local computer.
+• Connect computer directly or indirectly to Freedom II unit.
+• Open the software to configure the layout of the monitors as desired.
+</code></pre>
+<p><img alt="" src="../media/freedomswitch1.png" /></p>
+<pre><code>• Go to Configure &gt;&gt; Connection &gt;&gt; Network Tab and configure IP address , username and password
+</code></pre>
+<p><img alt="" src="../media/freedomswitch2.png" /></p>
+<pre><code>• Flash the Monitor layout Freedom II
+• Glide and switch feature is enabled now.
+</code></pre>
+<h2 id="spoke-relay-configuration-without-rocc-central-manager">Spoke Relay Configuration without ROCC Central Manager</h2>
+<pre><code>1. Connect Display, Keyboard, and Mouse to an "unmanaged" Command Center Relay (CC Relay) (EMD2000SE-R / EMD2002SE-R)
+2. Power on the CC Relay
+3. Connect a Spoke Relay (EMD200SE-T, EMD2002SE-T, EMD200DV-T) to the CC Relay with a network cable. Power on the spoke relay
+4. On the CC Relay display log in. Default is admin/admin
+5. Navigate to the "Control" tab
+</code></pre>
+<p><img alt="" src="../media/Spoke_relay.png" /></p>
+<pre><code>6. Click the "Transmitter" button on the left hand side
+7. Input the following IP address into the "Transmitter IP Address" field: 192.168.1.22
+8. Click "Apply"
+9. Click the "Network" button
+10. Enter the correct network settings
+11. Click "Apply"
+12. Transmitter should restart and have the new network settings applied
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright © 2020, Philips, All rights reserved.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../jquery.tablesorter.min.js" defer></script>
+        <script src="../../extra.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

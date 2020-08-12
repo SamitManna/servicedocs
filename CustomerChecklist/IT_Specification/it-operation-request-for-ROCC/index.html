@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>IT Specification - ROCC Service Docs Portal</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../../extra.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">ROCC Service Docs Portal</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../..">Welcome</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer Checklist <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../deployment-view/">Deployment Views</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">IT Specification</a>
+</li>
+                                    
+<li >
+    <a href="../customer-workflow-getting-started/">Customer workflow finalization</a>
+</li>
+                                    
+<li >
+    <a href="../master-data-management/">Management</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product Installation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../Production_Installation/platform-installation/">Platform Installation</a>
+</li>
+                                    
+<li >
+    <a href="../../../Production_Installation/hardware-integration/">Hardware Deployment</a>
+</li>
+                                    
+<li >
+    <a href="../../../Production_Installation/KVM-Infra-Management/">Central Manager(KVM Infra management)</a>
+</li>
+                                    
+<li >
+    <a href="../../../Production_Installation/application-server-installation/">Application Server (On-Prem)</a>
+</li>
+                                    
+<li >
+    <a href="../../../Production_Installation/Command-Center/">Command Center</a>
+</li>
+                                    
+<li >
+    <a href="../../../Production_Installation/Device-installation/">Device(spoke) Installation</a>
+</li>
+                                    
+<li >
+    <a href="../../../Production_Installation/surfacePro-installation/">SurfacePro installation</a>
+</li>
+                                    
+<li >
+    <a href="../../../Production_Installation/anywhere-app-installation/">Anywhere App installation</a>
+</li>
+                                    
+<li >
+    <a href="../../../Production_Installation/boxilla-tx-rx-upgrade/">Boxilla Upgrade</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Customer On-boarding</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Production_Installation/new-customer-onboarding/">New customer onboarding</a>
+</li>
+            
+<li >
+    <a href="../../../Production_Installation/update-existing.customer/">Updates to existing customer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Integration</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Production_Installation/hardware-integration/">Hardware Integration</a>
+</li>
+            
+<li >
+    <a href="../../../Production_Installation/testing-validation/">Testing and Validation</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Serviceability</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../Serviceability/admin-workflow/">Admin Workflow</a>
+</li>
+            
+<li >
+    <a href="../../../Serviceability/audit-Logging/">Audit viewing</a>
+</li>
+            
+<li >
+    <a href="../../../Serviceability/hsdp-log-viewer/">HSDP Logs viewing</a>
+</li>
+            
+<li >
+    <a href="../../../Serviceability/device-enrollement/">Device Enrollment</a>
+</li>
+            
+<li >
+    <a href="../../../Serviceability/FSE-on-boarding/">FSE On-boarding</a>
+</li>
+            
+<li >
+    <a href="../../../Serviceability/usercreation-authorization/">User Creation and Authorization</a>
+</li>
+            
+<li >
+    <a href="../../../Serviceability/password-management/">Password Management</a>
+</li>
+            
+<li >
+    <a href="../../../Serviceability/service-alert-management/">Service Alert Management</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Troubleshooting</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../TrainingAndTroubleshooting/troubleshooting-guide/">Troubleshooting Guide</a>
+</li>
+            
+<li >
+    <a href="../../../TrainingAndTroubleshooting/training-video/">Training Videos</a>
+</li>
+            
+<li >
+    <a href="../../../TrainingAndTroubleshooting/troubleshoot-mouse-missalignment/">Troubleshoot Mouse Misalignment Issues</a>
+</li>
+            
+<li >
+    <a href="../../../TrainingAndTroubleshooting/troubleshoot-dual-mouse-support/">Troubleshoot Dual Mouse support</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changelogs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Platform</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../changelogs/platform/">ROCC Server</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">On-Prem</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../../changelogs/application/">ROCC Application</a>
+</li>
+            
+<li >
+    <a href="../../../changelogs/rocc-surfacepro/">ROCC Device(SurfacePro)</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../deployment-view/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../customer-workflow-getting-started/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#it-operations-request-for-rocc">IT Operations Request for ROCC</a></li>
+            <li><a href="#vm-and-workstations">VM and Workstations</a></li>
+            <li><a href="#it-networking-and-security">IT Networking and Security</a></li>
+            <li><a href="#biomed">Biomed</a></li>
+            <li><a href="#physical-ports">Physical Ports</a></li>
+            <li><a href="#port-reachability">Port Reachability</a></li>
+            <li><a href="#firewall-rules">Firewall Rules</a></li>
+            <li><a href="#power-outlets">Power Outlets</a></li>
+            <li><a href="#space">Space</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="it-operations-request-for-rocc">IT Operations Request for ROCC</h2>
+<h3 id="vm-and-workstations">VM and Workstations</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Ask</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VM for ROCC application server </td>
+<td>OS Ubuntu 18.04, 8 core Core, RAM 32GB, Storage 200GB</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>Chrome Version:</td>
+</tr>
+<tr>
+<td>Inetrnet Access</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Workstation</td>
+<td>Windows 10, quad core, 16 GM RAM, Storage 256 GB, running Chrome browser​</td>
+</tr>
+<tr>
+<td>Allocate DNS</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="it-networking-and-security">IT Networking and Security</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Ask</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IT Networking</td>
+<td>Information Security and Privacy Questionnaire ​</td>
+</tr>
+<tr>
+<td>IT Networking</td>
+<td>Provide Detailed Network Diagram​ ​</td>
+</tr>
+<tr>
+<td>IT Networking</td>
+<td>All required material for conducting Nexpose scan on Ubuntu ​ ​</td>
+</tr>
+<tr>
+<td>IT Networking</td>
+<td>Guidelines for Software penetration testing​ ​</td>
+</tr>
+<tr>
+<td>IT Networking</td>
+<td>Provide CA signed certificate for use in VM​ ​</td>
+</tr>
+<tr>
+<td>IT Networking</td>
+<td>Information Security and Privacy Questionnaire ​</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>Agreement to use Philips HIPPA compliant, GDPR compliant, HITRUST compliant HealthSuite Digital Platform Cloud services over internet​ ​</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>Identify LAN and WAN capacity​​</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>Help with Philips Switch Burn-out room test​ ​</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>Allocate Network ports and IP addresses ​</td>
+</tr>
+</tbody>
+</table>
+<h3 id="biomed">Biomed</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Ask</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Biomed</td>
+<td>Philips will provide monitors  for lead tech/charge tech in command center. Need Biomed’s inputs on Equipment Tagging and security clearance on all hardware devices​ ​</td>
+</tr>
+</tbody>
+</table>
+<h3 id="physical-ports">Physical Ports</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Ask</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>@ Modality Location</td>
+<td>1 additional Ethernet port  at least 100 Mbps capacity ​</td>
+</tr>
+<tr>
+<td>@ Tech Seat at the command center</td>
+<td>2 Ethernet ports at least 100 Mbps acapcity</td>
+</tr>
+<tr>
+<td>Additional Port</td>
+<td>1 Ethernet port to be made available to connect the Philips management appliance – can be co-located with ’s switching infrastructure ​​</td>
+</tr>
+<tr>
+<td>IP Address</td>
+<td>Block of static IP addresses required for the Philips devices that will be plugged into the network</td>
+</tr>
+<tr>
+<td>Port Reachability​</td>
+<td>Devices connected to the above ports should be reachable from each other​</td>
+</tr>
+</tbody>
+</table>
+<h3 id="port-reachability">Port Reachability</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Ask</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Protocols and ports need to be enabled​</td>
+<td>IP Unicast – Port 3389 for Rx to Tx communications (Allow TCP and UDP traffic on this port)​</td>
+</tr>
+<tr>
+<td>Protocols and ports need to be enabled​</td>
+<td>UDP – Unicast and Multicast for management (Port 39150)</td>
+</tr>
+</tbody>
+</table>
+<p>The ROCC application server (running on  VM) and client devices should have access to internet over LAN and Wi-Fi​</p>
+<h3 id="firewall-rules">Firewall Rules</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Ask</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Enable firewall for Inbound and outbound for the static IP addresses</td>
+<td>54.172.60.0 - 54.172.61.255 , 34.203.250.0 - 34.203.251.255 (54.172.60.0/23, 34.203.250.0/23)</td>
+</tr>
+<tr>
+<td>Allow UDP Port range</td>
+<td>10,000 - 20,000</td>
+</tr>
+</tbody>
+</table>
+<h3 id="power-outlets">Power Outlets</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Ask</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Modality location</td>
+<td>1 additional power outlet to which an power extender can be connected for serving all ROCC devices ​</td>
+</tr>
+<tr>
+<td>Command centre tech location</td>
+<td>1 additional power outlet to which an power extender can be connected for serving all ROCC devices</td>
+</tr>
+</tbody>
+</table>
+<h3 id="space">Space</h3>
+<p>Additional space at each modality location, to place Philips ROCC client device and connectivity devices. ​
+Optional: Space designated for setting up a command centre where command centre techs will be located</p>
+<blockquote>
+<p><strong>Note:</strong> Philips will supply the ROCC software, and the devices including additional monitors and keyboards to be placed at command center location</p>
+</blockquote></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright © 2020, Philips, All rights reserved.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../jquery.tablesorter.min.js" defer></script>
+        <script src="../../../extra.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Platform Installation - ROCC Service Docs Portal</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../../extra.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">ROCC Service Docs Portal</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../..">Welcome</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer Checklist <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/deployment-view/">Deployment Views</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/it-operation-request-for-ROCC/">IT Specification</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/customer-workflow-getting-started/">Customer workflow finalization</a>
+</li>
+                                    
+<li >
+    <a href="../../CustomerChecklist/IT_Specification/master-data-management/">Management</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product Installation <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li class="active">
+    <a href="./">Platform Installation</a>
+</li>
+                                    
+<li >
+    <a href="../hardware-integration/">Hardware Deployment</a>
+</li>
+                                    
+<li >
+    <a href="../KVM-Infra-Management/">Central Manager(KVM Infra management)</a>
+</li>
+                                    
+<li >
+    <a href="../application-server-installation/">Application Server (On-Prem)</a>
+</li>
+                                    
+<li >
+    <a href="../Command-Center/">Command Center</a>
+</li>
+                                    
+<li >
+    <a href="../Device-installation/">Device(spoke) Installation</a>
+</li>
+                                    
+<li >
+    <a href="../surfacePro-installation/">SurfacePro installation</a>
+</li>
+                                    
+<li >
+    <a href="../anywhere-app-installation/">Anywhere App installation</a>
+</li>
+                                    
+<li >
+    <a href="../boxilla-tx-rx-upgrade/">Boxilla Upgrade</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Customer On-boarding</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../new-customer-onboarding/">New customer onboarding</a>
+</li>
+            
+<li >
+    <a href="../update-existing.customer/">Updates to existing customer</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Integration</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../hardware-integration/">Hardware Integration</a>
+</li>
+            
+<li >
+    <a href="../testing-validation/">Testing and Validation</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Serviceability</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../Serviceability/admin-workflow/">Admin Workflow</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/audit-Logging/">Audit viewing</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/hsdp-log-viewer/">HSDP Logs viewing</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/device-enrollement/">Device Enrollment</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/FSE-on-boarding/">FSE On-boarding</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/usercreation-authorization/">User Creation and Authorization</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/password-management/">Password Management</a>
+</li>
+            
+<li >
+    <a href="../../Serviceability/service-alert-management/">Service Alert Management</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Troubleshooting</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshooting-guide/">Troubleshooting Guide</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/training-video/">Training Videos</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshoot-mouse-missalignment/">Troubleshoot Mouse Misalignment Issues</a>
+</li>
+            
+<li >
+    <a href="../../TrainingAndTroubleshooting/troubleshoot-dual-mouse-support/">Troubleshoot Dual Mouse support</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changelogs <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Platform</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../changelogs/platform/">ROCC Server</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">On-Prem</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../changelogs/application/">ROCC Application</a>
+</li>
+            
+<li >
+    <a href="../../changelogs/rocc-surfacepro/">ROCC Device(SurfacePro)</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../../CustomerChecklist/IT_Specification/master-data-management/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../hardware-integration/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#rocc-hsdp-services-and-applications-deployment-instructions">ROCC HSDP services and applications deployment instructions</a></li>
+            <li><a href="#os-configuration-proxy-settings-optional">OS Configuration - Proxy Settings (Optional)</a></li>
+            <li><a href="#installation">Installation</a></li>
+            <li><a href="#upgrade-instructions">Upgrade Instructions</a></li>
+            <li><a href="#reference">Reference</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="rocc-hsdp-services-and-applications-deployment-instructions">ROCC HSDP services and applications deployment instructions</h2>
+<h3 id="os-configuration-proxy-settings-optional">OS Configuration - Proxy Settings (Optional)</h3>
+<pre><code class="bash">    vi /etc/environment #add the following four entries:
+    export http_proxy=&quot;http://[user:passwd@]proxy.server:port&quot;
+    export https_proxy=&quot;http://[user:passwd@]proxy.server:port&quot;
+    export HTTP_PROXY=&quot;http://[user:passwd@]proxy.server:port&quot;
+    export HTTPS_PROXY=&quot;http://[user:passwd@]proxy.server:port&quot;
+
+    #apt.conf
+    vi /etc/apt/apt.conf
+    #Add below lines
+    Acquire::http::Proxy &quot;http://[user:pass@]proxy_host:port&quot;;
+    Acquire::https::Proxy &quot;[http://user:pass@]proxy_host:port&quot;;
+</code></pre>
+
+<h3 id="installation">Installation</h3>
+<ol>
+<li>
+<p>Download rocc_hsdp_installer-VERSION.zip to /tmp or any other directory</p>
+</li>
+<li>
+<p>Unzip installer zip file</p>
+<p>unzip rocc_onprem_installer-VERSION.zip -d rocc-hsdp-installer</p>
+</li>
+<li>
+<p>Update install input parameters</p>
+<p>```bash
+    vi config/config.json</p>
+<pre><code>#Update CF Orgname,space,target env and end point URL recevived from HSDP
+"cloud_foundry": {
+    "org": "",  
+    "space": "",
+    "target_env": "",
+    "HSDP_LOG_INGESTER_URL": "",
+    "HSDPAuditQueryEndpoint": "",
+    "HSDP_CSPD_URL": "",
+    "HSDP_IDM_URL": "",
+    "HSDP_IAM_URL": ""
+
+#Update cloud foundry credentials :
+"cf_credentials": {
+    "username": "",
+    "password": ""
+
+#Update docker repo credentials : 
+"docker_repo": {
+    "username": "",
+    "password": "",
+
+#Update docker version and build version for rocc-db
+"docker_image": 
+{
+    "application_version": 
+    {
+        "rocc_audit_gateway_service": "",
+        "rocc_audit_processing": "",
+        "rocc_communication": "",
+        "rocc_graphql_internal": "",
+        "rocc_iam": "",
+        "rocc_management": "",
+        "rocc_monitoring": "",
+        "rocc_nginx": "",
+        "rocc_db_build": "",
+        "rocc_rbac": "",
+        "rocc": "",
+        "rocc_service_discovery": "",
+        "rocc_twilio_pool": ""
+</code></pre>
+<p>```</p>
+</li>
+<li>
+<p>Using sudo or root execute install.sh script</p>
+<p><code>bash install.sh</code></p>
+</li>
+</ol>
+<h3 id="upgrade-instructions">Upgrade Instructions</h3>
+<blockquote>
+<p>TODO://</p>
+</blockquote>
+<h3 id="reference">Reference</h3>
+<blockquote>
+<p>Note: Refer below steps only if individual steps to be executed </p>
+</blockquote>
+<p>Go it rocc-hadp-installer folder
+Added values to keys in config files as shown above.</p>
+<ul>
+<li>
+<p>To setup a docker</p>
+<p><code>ansible-playbook rocc_playbook.yml -t docker_setup</code></p>
+</li>
+<li>
+<p>To deploy HSDP services</p>
+<p><code>ansible-playbook rocc_playbook.yml -t cf_services</code></p>
+</li>
+<li>
+<p>To deploy db application</p>
+<p><code>ansible-playbook rocc_playbook.yml -t cf_db</code></p>
+</li>
+<li>
+<p>To deploy iam application</p>
+<p><code>ansible-playbook rocc_playbook.yml -t cf_iam</code></p>
+</li>
+<li>
+<p>To deploy graphql application</p>
+<p><code>ansible-playbook rocc_playbook.yml -t cf_graphql</code></p>
+</li>
+<li>
+<p>To deploy nginx application</p>
+<p><code>ansible-playbook rocc_playbook.yml -t cf_nginx</code></p>
+</li>
+<li>
+<p>To deploy all other applications</p>
+<p><code>ansible-playbook rocc_playbook.yml -t cf_app</code></p>
+</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>Copyright © 2020, Philips, All rights reserved.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../jquery.tablesorter.min.js" defer></script>
+        <script src="../../extra.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
